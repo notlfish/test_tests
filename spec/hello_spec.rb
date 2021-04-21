@@ -10,9 +10,15 @@ RSpec.describe 'Hello name message' do
   end
 
   describe 'Greets e v e r y b o d y' do
-    it 'Prints default greeting message' do
+    xit 'Prints default greeting message' do
       expect($stdout).to receive(:puts).with('Hello World!')
       hello_message
+    end
+  end
+
+  describe 'Adds 1 to input number' do
+    xit 'returns 5' do
+      expect(add1(4)).to eq(5)
     end
   end
 end
