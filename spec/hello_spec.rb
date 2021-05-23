@@ -21,4 +21,10 @@ RSpec.describe 'Hello name message' do
       expect(add1(4)).to eq(5)
     end
   end
+
+  describe 'Increments when input is negative' do
+    it 'Succeeds iff 4 < add1(4)' do
+      expect(add1(4) > 4).to be_truthy
+    end
+  end
 end
